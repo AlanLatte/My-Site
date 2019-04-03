@@ -5,14 +5,14 @@
 }
 
 body{
-  background: url(../img/index.jpg);
+  background: url(../img/index.gif);
 }
 
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 95%;
+  /* width: 95%; */
   margin: 0 auto;
   font-family: "Orbitron", sans-serif;
 }
@@ -29,7 +29,7 @@ ol {
 }
 
 .menu-item {
-  background: #444;
+  background: #50505e;
   padding: 1em 0.5em;
   position: relative;
   border-bottom: 5px solid #999;
@@ -71,7 +71,7 @@ ol {
 }
 
 a {
-  color: #fff;
+  color: #fefefe;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -108,4 +108,13 @@ a:focus {
   .menu {
     font-size: 12px;
   }
+}
+
+.container_bar{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
