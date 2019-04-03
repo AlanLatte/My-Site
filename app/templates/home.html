@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bar.css') }}">
+	<title>Me</title>
+</head>
+<body>
+	<nav class="menu" role='navigation'>
+		<ol>
+			<li class="menu-item"><a href="/">Home</a></li>
+			<li class="menu-item">
+				<a href="/">Git*</a>
+				<ol class="sub-menu" aria-lavel="submenu">
+					<li class="menu-item"><a href="/GitHub">GitHub</a></li>
+				</ol>
+			</li>
+			<li class="menu-item"><a href="/about">AboutMe</a></li>
+			<li class="menu-item" aria-haspopup="true">
+				<a href="#0">Contacts</a>
+				<ol class="sub-menu" aria-label="submenu">
+					<li class="menu-item"><a href="#Email">Email</a></li>
+					<li class="menu-item"><a href="/tlgrm">Tlgrm</a></li>
+				</ol>
+			</li>
+		</ol>
+	</nav>
+</body>
+</html>
