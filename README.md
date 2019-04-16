@@ -5,12 +5,12 @@
 ---
 > __Clone repo.__
 ```sh
-	  git clone https://github.com/AlanLatte/My-Site.git
-	  cd My-Site
+	git clone https://github.com/AlanLatte/My-Site.git
+	cd My-Site
 ```
 >**Run main.py**
 ```python3
-	  python3 main.py
+	python3 main.py
 ```
 
 **Created by** __[AlanLatte](t.me/alanlatte)__
