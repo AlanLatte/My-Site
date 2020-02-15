@@ -1,4 +1,6 @@
 from flask import (Flask, render_template, redirect, url_for)
+import os
+
 app=Flask(__name__)
 
 @app.route('/')
@@ -22,4 +24,4 @@ def vk():
     return redirect('https://vk.com/alan.latte')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0", port=int(os.getenv('PORT', 5000)))
