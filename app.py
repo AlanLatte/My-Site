@@ -13,7 +13,7 @@ def about():
 
 @app.route('/tlgrm')
 def telegram():
-    return redirect('https://t.me/Alanlatte/')
+    return redirect('https://tele.gs/Alanlatte/')
 
 @app.route('/GitHub')
 def GitHub():
