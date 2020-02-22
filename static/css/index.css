@@ -57,13 +57,17 @@ footer{
 }
 footer > .author{
   display: block;
-  background: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+  background: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  background: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  background: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);
   /* background-size: 400% 400%; */
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0.3em 0.6em ;
   border: 0.5vh solid transparent;
-  border-image: linear-gradient(135deg, #12BCB0 20%, #FABE0E 70%);
+  -webkit-border-image: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  -o-border-image: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  border-image: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);
   border-image-slice: 1;
 }
 
@@ -73,8 +77,10 @@ footer > .author > a{
 }
 
 footer > .author > a:hover {
+  background: -webkit-linear-gradient(165deg, #12BCB0 20%, #FABE0E 70%);
+  background: -o-linear-gradient(165deg, #12BCB0 20%, #FABE0E 70%);
   background: linear-gradient(255deg, #12BCB0 20%, #FABE0E 70%);
-  background-clip: text;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 footer > .author > h1{
@@ -102,11 +108,13 @@ ul.menu > li.row-item > a {
   background: white;
   text-decoration: none;
   -webkit-text-fill-color: transparent;
-  background-clip: text;
+  -webkit-background-clip: text;
   letter-spacing: 0.1em;
   position: relative;
 }
 ul.menu > li.row-item > a:hover {
+  background-image: -webkit-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-image: -o-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   background-size: 400% 400%;
   animation: animatedMenu 3s ease-out;
@@ -120,6 +128,8 @@ ul.menu > li.row-item > a::before {
   position: absolute;
 }
 ul.menu > li.row-item > a:hover::before {
+  background-image: -webkit-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+  background-image: -o-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
   background-size: 400% 400%;
   animation: animatedMenu 3s ease-out;
