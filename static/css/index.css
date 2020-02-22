@@ -22,7 +22,7 @@
   align-items: center;
   position: relative;
   z-index: 1;
-  margin-bottom: 9vh;
+  margin-bottom: 10vh;
   background: black;
 }
 
@@ -40,12 +40,10 @@
 }
 
 footer{
-  display: flex;
+  display: block;
+  height: 10vh;
   font-size: 2vh;
-  justify-content: center;
-  align-items: flex-end;
   width: 100vw;
-  height: 100vh;
   text-align: center;
   background: black;
   background-size: cover;
@@ -56,11 +54,11 @@ footer{
   z-index: 0;
 }
 footer > .author{
-  display: block;
+  letter-spacing: 0.1em;
+  display: inline-block;
   background: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
   background: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
   background: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);
-  /* background-size: 400% 400%; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0.3em 0.6em ;
@@ -73,7 +71,7 @@ footer > .author{
 
 footer > .author > a{
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 footer > .author > a:hover {
