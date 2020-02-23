@@ -41,7 +41,7 @@
 
 footer{
   display: block;
-  height: 10vh;
+  height: 11vh;
   font-size: 2vh;
   width: 100vw;
   text-align: center;
@@ -54,6 +54,7 @@ footer{
   z-index: 0;
 }
 footer > .author{
+  margin-top: 2vh;
   letter-spacing: 0.1em;
   display: inline-block;
   background: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);

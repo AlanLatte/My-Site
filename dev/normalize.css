@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+*{
+  font-family:"Nunito Sans";
+}
+
+@media (max-width: 200px) {
+  .content{
+    font-size: 8vw;
+  }
+}
+
+@media all and (min-width: 560px)  {
+  .content{
+    margin-bottom: 10vh;
+    font-size: 3vh;
+    justify-content: center;
+    background: white;
+    align-items: center;
+  }
+  .content > ul.menu{
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .content > ul.menu > li.row-item > a{
+    display: flex;
+    position: relative;
+    flex-direction: column-reverse;
+  }
+  .content > ul.menu > li.row-item > a ::after {
+    height: 0.1em;
+  }
+}
+@keyframes animatedMenu {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 100%;
+  }
+}
