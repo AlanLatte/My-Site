@@ -1,0 +1,49 @@
+footer{
+  display: block;
+  height: 11vh;
+  font-size: 2vh;
+  width: 100vw;
+  text-align: center;
+  background: black;
+  background-size: cover;
+  color: #378079;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  font-family: monospace;
+}
+
+footer > .author{
+  margin-top: 2vh;
+  letter-spacing: 0.1em;
+  display: inline-block;
+  background: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  background: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  background: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 0.3em 0.6em ;
+  border: 0.5vh solid transparent;
+  -webkit-border-image: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  -o-border-image: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
+  border-image: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);
+  border-image-slice: 1;
+}
+
+footer > .author > a{
+  outline: none;
+  text-decoration: none;
+}
+
+footer > .author > a:hover {
+  background: -webkit-linear-gradient(165deg, #12BCB0 20%, #FABE0E 70%);
+  background: -o-linear-gradient(165deg, #12BCB0 20%, #FABE0E 70%);
+  background: linear-gradient(255deg, #12BCB0 20%, #FABE0E 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+footer > .author > h1{
+  text-transform: uppercase;
+  font-size: 1em;
+}

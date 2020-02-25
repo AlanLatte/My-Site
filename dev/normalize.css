@@ -15,12 +15,12 @@
   }
 }
 
-@media all and (min-width: 560px)  {
+@media (min-width: 560px)  {
   .content{
     margin-bottom: 10vh;
     font-size: 3vh;
     justify-content: center;
-    background: white;
+    background: black;
     align-items: center;
   }
   .content > ul.menu{
