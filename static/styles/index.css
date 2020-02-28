@@ -1,5 +1,7 @@
-@import 'normalize.css';
-@import 'footer.css';
+/* @import "{{ url_for('static', filename='css/normalize.css') }}";
+@import "{{ url_for('static', filename='css/footer.css') }}"; */
+@import "normalize.css";
+@import "footer.css";
 
 *{
   padding: 0;
