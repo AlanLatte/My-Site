@@ -1,7 +1,8 @@
 footer{
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 11vh;
-  font-size: 2vh;
   width: 100vw;
   text-align: center;
   background: black;
@@ -15,16 +16,14 @@ footer{
 }
 
 footer > .author{
-  margin-top: 2vh;
   letter-spacing: 0.1em;
-  display: inline-block;
   background: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
   background: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
   background: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   padding: 0.3em 0.6em ;
-  border: 0.5vh solid transparent;
+  border: 0.1vh solid transparent;
   -webkit-border-image: -webkit-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
   -o-border-image: -o-linear-gradient(top left, #12BCB0 20%, #FABE0E 70%);
   border-image: linear-gradient(to bottom right, #12BCB0 20%, #FABE0E 70%);

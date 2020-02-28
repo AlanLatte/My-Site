@@ -19,6 +19,9 @@ function desktop_normalize(){
   $(".content").css(
     {"font-size": "3vh"}
   );
+  $("footer").css({
+    "font-size": "2vh",
+  });
   $(".row-item a").click(function(){
     if($(window).width() > 560){
       if ($(this).parent().is("#home")){
@@ -46,9 +49,12 @@ function desktop_normalize(){
 }
 
 if (/android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini/i.test(navigator.userAgent.toLowerCase())){
-  $(".content").css(
-    {"font-size": "35px"}
-  );
+  $(".content").css({
+    "font-size": "35px"
+  });
+  $("footer").css({
+    "font-size" : "1.5em",
+  });
 } else{
   desktop_normalize();
 }
