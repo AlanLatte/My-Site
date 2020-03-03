@@ -2,30 +2,70 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Menu</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/index.css') }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Alan Latte</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 <body>
-  <div class="inner">
-    <div class="content">
-      <div class="menu">
-        <ul>
-          <li class="row-item" id="home"><a href="#">home</a></li>
-          <li class="row-item" id="projects"><a href="#">projects</a></li>
-          <li class="row-item" id="about"><a href="#">about</a></li>
-          <li class="row-item" id="contact"><a href="#">contact</a></li>
-        </ul>
+  <div class="container">
+    <div class="img">
+      <div class="line"></div>
+      <img src="me.jpg" alt="">
+      <div class="corner shape-corner"></div>
+      <div class="corner-bottom shape-corner"></div>
+      <div class="title">
+        <span>Alan<br>Latte</span>
+      </div>
+      <div class="tag">
+        <span>I need a make a cup <br> of coffee</span>
+      </div>
+      <div class="metier">
+        <span>developer</span>
+      </div>
+      <div class="add">
+        <i class="fa fa-plus"></i>
       </div>
     </div>
-    <footer>
-      <div class="author">
-        <h1>created by:</h1>
-        <a href="/tlgrm">Alan Latte</a>
+    <div class="data">
+      <div class="contact">
+        <span>contact</span>
       </div>
-    </footer>
+    </div>
+    <div class="strips">
+      <div class="s-one">
+        <div class="year">|2020|</div>
+      </div>
+      <div class="s-two"></div>
+      <div class="s-three"></div>
+    </div>
+    <div class="top-bar">
+      <ul>
+        <li>
+          <div class="logo">
+            <span>AlanLatte</span><i class="fa fa-coffee"></i>
+          </div>
+        </li>
+        <li>
+          <div class="menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="media">
+      <ul>
+        <li><a href="#"><i class="fa fa-vk"></i></a></li>
+        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></a></i></li>
+        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      </ul>
+    </div>
   </div>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='sripts/index.js') }}"></script>
 
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

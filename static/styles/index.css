@@ -1,86 +1,319 @@
-/* @import "{{ url_for('static', filename='css/normalize.css') }}";
-@import "{{ url_for('static', filename='css/footer.css') }}"; */
-@import "normalize.css";
-@import "footer.css";
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
 
-*{
-  padding: 0;
-  margin: 0;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.inner{
-  overflow: hidden;
-}
-
-.content{
-  height: 100vh;
-  display: flex;
-  align-content: space-between;
-  align-items: center;
-  position: relative;
-  z-index: 1;
+:root{
   background: black;
 }
 
-.content::after{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -3rem;
-  font-size: 0.3rem;
-  background-size: 3rem 100%;
-  height: 1px;
-  width: 100%;
-  border: none;
+*{
   margin: 0;
+  padding: 0;
 }
 
-
-.content > .menu{
-  list-style: none;
-  text-transform: uppercase;
+html, body {
+  font-family: 'Poppins';
 }
 
-div.menu > ul > li.row-item{
-  padding-right: 1em;
-  padding-left: 1em;
-}
-
-div.menu > ul > li.row-item > a {
-  display: inline-flex;
-  outline: none;
-  flex-direction: column-reverse;
-  background: white;
-  text-decoration: none;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  letter-spacing: 0.1em;
-  position: sticky;
-}
-
-div.menu > ul > li.row-item > a:hover {
-  background-image: -webkit-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-image: -o-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-size: 400% 400%;
-  animation: animatedMenu 3s ease-out;
-}
-
-div.menu > ul > li.row-item > a::before {
-  display: flex;
-  content: "";
-  height: 0.1em;
-  transition: width 0.2s ease 0s;
-  width: 0;
-  position: absolute;
-}
-div.menu > ul > li.row-item > a:hover::before {
-  background-image: -webkit-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-image: -o-linear-gradient(left, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
-  background-size: 400% 400%;
-  animation: animatedMenu 3s ease-out;
+.container{
   width: 100%;
+  height: 100vh;
+  position: relative;
+  color: white;
+}
+
+.content{
+  position: relative;
+}
+
+.s-one {
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  left: 15%;
+  z-index: -1;
+}
+
+.s-two {
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  left: 50%;
+  z-index: -1;
+}
+
+.s-three {
+  position: absolute;
+  width: 1px;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  left: 85%;
+  z-index: -1;
+}
+
+.top-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.top-bar ul li {
+  list-style: none;
+  line-height: 46px;
+  padding: 16px 32px;
+  margin: 0 16px;
+}
+
+.menu-btn {
+  position: absolute;
+  right: 20px;
+  padding: 16px 0 0 0;
+  width: 40px;
+  height: 40px;
+}
+
+.one, .two {
+  position: absolute;
+  width: 30px;
+  height: 2px;
+}
+
+.two {
+  margin-top: 12px;
+}
+
+.acocunt span {
+  margin-left: 8px;
+}
+
+.logo {
+  position: absolute;
+  left: 40px;
+  font-family: 'Trade Winds';
+  font-weight: bolder;
+  font-size: 20px;
+
+}
+
+.contact {
+  padding: 10px 30px;
+  position: absolute;
+  left: -20px;
+  top: 180px;
+  transform: rotate(-90deg);
+}
+
+.tag {
+  position: absolute;
+  top: 166px;
+  left: -300px;
+  padding: 10px 30px;
+  color: #fff;
+}
+
+.year {
+  position: absolute;
+  top: 90%;
+  left: -130px;
+  padding: 10px 30px;
+}
+
+.add {
+  position: absolute;
+  left: -54px;
+  font-size: 20px;
+  padding: 10px 30px;
+}
+
+.img img {
+  width: 16.3em;
+}
+
+.img {
+  position: absolute;
+  z-index: 0;
+  top: 15%;
+  left: 50%;
+}
+
+.shape-corner{
+  border: 2px solid transparent;
+}
+
+.corner,
+.corner-bottom{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: #5b5b5b;
+}
+
+.corner{
+  top: -10px;
+  right: -10px;
+  border-left: none;
+  border-bottom: none;
+  animation: corner-increase 3s ease-in forwards;
+}
+
+.corner-bottom{
+  border-right: none;
+  border-top: none;
+  bottom: -10px;
+  left: -10px;
+  animation: corner-increase 3s ease-in forwards;
+}
+
+
+.title {
+  position: absolute;
+  font-size: 45px;
+  top: 385px;
+  left: 200px;
+  font-family: 'Trade Winds';
+  color: #999999
+}
+
+.line {
+  position: absolute;
+  left: -99px;
+  top: 200px;
+  background: #d6d6d6;
+  width: 180px;
+  height: 2px;
+  transform: rotate(90deg);
+}
+
+.metier {
+  padding: 10px 30px;
+  position: absolute;
+  left: 205px;
+  top: 180px;
+  transform: rotate(90deg);
+}
+
+.tag-line {
+  position: absolute;
+  top: 490px;
+  left: 692px;
+  padding: 10px 30px;
+  color: grey;
+}
+
+.media ul{
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 75%;
+}
+
+.media ul li {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.media ul li a{
+  text-decoration: none;
+  outline: none;
+  color: white;
+}
+
+.title span {
+  opacity: 0;
+  animation: appear-text 0.1s linear forwards;
+  animation-delay: 2s;
+}
+
+.title:after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #999999;
+  position: absolute;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1.4s;
+}
+
+.tag-line span {
+  opacity: 0;
+  animation: appear-text 0.1s linear forwards;
+  animation-delay: 2.2s;
+}
+
+
+img {
+  opacity: 0;
+  animation: appear-text 1s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.img:after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #3b3b3b;
+  position: absolute;
+  animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+}
+
+@keyframes rev-img {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+
+  50% {
+    left: 0;
+    width: 16.3em;
+  }
+
+  100% {
+    left: 16.3em;
+    width: 0%;
+  }
+}
+
+@keyframes corner-increase {
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+
+  100%{
+    width: 50px;
+    height: 125px;
+  }
+}
+
+@keyframes rev-block {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+
+  50% {
+    left: 0;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
