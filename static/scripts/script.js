@@ -84,8 +84,8 @@ TweenMax.from(".corner", 1.4, {
   ease: Expo.easeInOut
 });
 
-TweenMax.staggerFrom(".media ul li", 2, {
-  delay: 2.8,
+TweenMax.staggerFrom(".media ul li", 1.5, {
+  delay: 2,
   opacity: 0,
   y: 40,
   ease: Expo.easeInOut
