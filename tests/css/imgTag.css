@@ -1,0 +1,197 @@
+.tag {
+  position: absolute;
+  text-align: right;
+  top: 180px;
+  left: -270px;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+.coffee .text-wrapper{
+  opacity: 0;
+}
+
+.add {
+  position: absolute;
+  left: -54px;
+  font-size: 10px;
+  padding: 10px 30px;
+}
+
+.img img {
+  width: 16.3em;
+}
+
+.img {
+  position: absolute;
+  z-index: 0;
+  top: 15%;
+  left: 50.7%;
+}
+
+.shape-corner{
+  border: 2px solid transparent;
+}
+
+.corner-top,
+.corner-bottom{
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: #5b5b5b;
+}
+
+.corner-top{
+  top: -10px;
+  right: -10px;
+  border-left: none;
+  border-bottom: none;
+  animation: corner-increase 3s ease-in forwards;
+}
+
+.corner-bottom{
+  border-right: none;
+  border-top: none;
+  bottom: -10px;
+  left: -10px;
+  animation: corner-increase 3s ease-in forwards;
+}
+
+
+.title {
+  position: absolute;
+  font-size: 45px;
+  top: 385px;
+  left: 200px;
+  font-family: 'Trade Winds';
+  color: #999999
+}
+
+.line {
+  position: absolute;
+  left: -99px;
+  top: 200px;
+  background: #d6d6d6;
+  transform: rotate(90deg);
+  animation: line-increase 3.5s ease-in forwards;
+}
+
+
+.metier {
+  position: absolute;
+  left: 235px;
+  top: 180px;
+  transform: rotate(90deg);
+}
+
+.title span {
+  opacity: 0;
+  animation: appear-text 0.1s linear forwards;
+  animation-delay: 2s;
+}
+
+.title:after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #999999;
+  position: absolute;
+  animation: rev-block 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1.4s;
+}
+
+.tag-line span {
+  opacity: 0;
+  animation: appear-text 0.1s linear forwards;
+  animation-delay: 2.2s;
+}
+
+
+img {
+  opacity: 0;
+  animation: appear-text 1s linear forwards;
+  animation-delay: 1.4s;
+}
+
+.img:after {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background: #3b3b3b;
+  position: absolute;
+  animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  animation-delay: 1s;
+}
+
+
+@keyframes rev-img {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+
+  50% {
+    left: 0;
+    width: 16.3em;
+  }
+
+  100% {
+    left: 16.3em;
+    width: 0%;
+  }
+}
+
+@keyframes corner-increase {
+  0%{
+    width: 0px;
+    height: 0px;
+  }
+
+  100%{
+    width: 50px;
+    height: 125px;
+  }
+}
+
+@keyframes rev-block {
+  0% {
+    left: 0%;
+    width: 0%;
+  }
+
+  50% {
+    left: 0;
+    width: 100%;
+  }
+
+  100% {
+    left: 100%;
+    width: 0%;
+  }
+}
+
+@keyframes line-increase {
+  0%{
+    width: 0px;
+    height: 2px;
+  }
+  100%{
+    width: 180px;
+    height: 2px;
+  }
+}
+
+
+@keyframes appear-text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

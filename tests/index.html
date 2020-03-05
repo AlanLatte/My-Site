@@ -5,23 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Alan Latte</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js" charset="utf-8"></script>
 </head>
 <body>
   <div class="container">
     <div class="img">
       <div class="line"></div>
-      <img src="me.jpg" alt="">
-      <div class="corner shape-corner"></div>
+      <img src="me.jpg" alt="me">
+      <div class="corner-top shape-corner"></div>
       <div class="corner-bottom shape-corner"></div>
       <div class="title">
         <span>Alan<br>Latte</span>
       </div>
-      <div class="tag">
-        <span>I need a make a cup <br> of coffee</span>
-      </div>
+      <span class="tag">
+        <span class="coffee text-wrapper">
+            <span class="letters">
+              <span>I need to make a cup</span>
+              <br>
+              <span> of coffee</span>
+            </span>
+        </span>
+      </span>
       <div class="metier">
         <span>developer</span>
       </div>
@@ -31,41 +38,42 @@
     </div>
     <div class="data">
       <div class="contact">
-        <span>contact</span>
+        <!-- <span>contact</span> -->
       </div>
     </div>
     <div class="strips">
       <div class="s-one">
-        <div class="year">|2020|</div>
+        <!-- <div class="year">|2020|</div> -->
       </div>
       <div class="s-two"></div>
-      <div class="s-three"></div>
     </div>
     <div class="top-bar">
       <ul>
         <li>
+
           <div class="logo">
-            <span>AlanLatte</span><i class="fa fa-coffee"></i>
+            <a href="#"><span>AlanLatte</a><svg style="fill: white;" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13 20h-7c-2.174-3.004-4-6.284-4-12h15c0 5.667-1.88 9.089-4 12zm5.119-10c-.057.701-.141 1.367-.252 2h1.55c-.449 1.29-1.5 2.478-2.299 2.914-.358 1.038-.787 1.981-1.26 2.852 3.274-1.143 5.846-4.509 6.142-7.766h-3.881zm-7.745-3.001c4.737-4.27-.98-4.044.117-6.999-3.783 3.817 1.409 3.902-.117 6.999zm-2.78.001c3.154-2.825-.664-3.102.087-5.099-2.642 2.787.95 2.859-.087 5.099zm9.406 15h-15v2h15v-2z"/></svg></i>
           </div>
         </li>
         <li>
-          <div class="menu-btn">
-            <span class="one"></span>
-            <span class="two"></span>
+          <div style="fill: white" class="menu-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M6 18h-2v5h-2v-5h-2v-3h6v3zm-2-17h-2v12h2v-12zm11 7h-6v3h2v12h2v-12h2v-3zm-2-7h-2v5h2v-5zm11 14h-6v3h2v5h2v-5h2v-3zm-2-14h-2v12h2v-12z"/></svg>
           </div>
         </li>
       </ul>
     </div>
     <div class="media">
       <ul>
-        <li><a href="#"><i class="fa fa-vk"></i></a></li>
-        <li><a href="#"><i class="fa fa-telegram"></i></a></li>
-        <li><a href="#"><i class="fa fa-instagram"></a></i></li>
-        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+        <li class="hover-this"><a href="http://vk.com/alan.latte"  target="_blank"><i class="fa fa-vk"></i></a></li>
+        <li class="hover-this"><a href="https://teleg.run/alan.latte" target="_blank"><i class="fa fa-telegram"></i></a></li>
+        <li class="hover-this"><a href="https://www.instagram.com/alan.latte12/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li class="hover-this"><a href="https://twitter.com/home?lang=ru"><i class="fa fa-twitter"></i></a></li>
       </ul>
     </div>
   </div>
+  <!-- <script type="text/javascript" src="scripts/cursorScript.js" charset="utf-8"></script> -->
+  <script type="text/javascript" src="scripts/script.js"></script>
+  <script type="text/javascript" src="scripts/animatedLoad.js"></script>
 
-  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

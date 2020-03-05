@@ -1,0 +1,17 @@
+.media ul{
+  list-style: none;
+  position: absolute;
+  right: 20px;
+  top: 75%;
+}
+
+.media ul li {
+  font-size: 18px;
+  margin: 0 0 12px 0;
+}
+
+.media ul li a{
+  text-decoration: none;
+  outline: none;
+  color: white;
+}

@@ -26,13 +26,6 @@ TweenMax.from(".contact", 1.4, {
   ease: Expo.easeInOut
 });
 
-TweenMax.from(".tag", 1, {
-  delay: 1.5,
-  opacity: 0,
-  y: -40,
-  ease: Expo.easeInOut
-});
-
 TweenMax.from(".metier", 2, {
   delay: 1.6,
   opacity: 0,
@@ -40,48 +33,53 @@ TweenMax.from(".metier", 2, {
   ease: Expo.easeInOut
 });
 
-TweenMax.from(".year", 2, {
+TweenMax.from([".year", ".add"], 2, {
   delay: 1.6,
   opacity: 0,
   x: -40,
   ease: Expo.easeInOut
 });
 
-TweenMax.from(".add", 2, {
-  delay: 1,
-  opacity: 0,
-  x: -40,
-  rotation: 90,
-  ease: Expo.easeInOut
-});
-
-TweenMax.from(".arrow-left", 2, {
-  delay: 2.8,
-  opacity: 0,
-  x: 40,
-  ease: Expo.easeInOut
-});
-
-TweenMax.from(".arrow-right", 2, {
-  delay: 2.8,
-  opacity: 0,
-  x: -40,
-  ease: Expo.easeInOut
-});
-
-
-TweenMax.from(".line", 2, {
-  delay: 2,
-  opacity: 0,
-  x: -30,
-  ease: Expo.easeInOut
-});
-
-TweenMax.from(".corner", 1.4, {
+TweenMax.from(".corner-top", 1.4, {
   delay: 1.7,
   opacity: 0,
   y: -80,
   ease: Expo.easeInOut
+});
+
+TweenMax.from(".corner-bottom", 1.4, {
+  delay: 1.7,
+  opacity: 0,
+  y: 80,
+  ease: Expo.easeInOut
+});
+
+TweenMax.from(".s-one", 4, {
+  delay: 0.5,
+  opacity: 0,
+  y: -1080,
+  ease: Expo.linear
+});
+
+TweenMax.from(".s-two", 4, {
+  delay: 0.5,
+  opacity: 0,
+  y: -1080,
+  ease: Expo.linear
+});
+
+TweenMax.from(".tag", 2, {
+  delay: 2.2,
+  opacity: 0,
+  x: -150,
+  // ease: Expo.easeOutExpo
+});
+
+TweenMax.staggerFrom(".line", 1.5, {
+  delay: 1.9,
+  opacity: 0,
+  x: -70,
+  ease: Expo.linear
 });
 
 TweenMax.staggerFrom(".media ul li", 2, {

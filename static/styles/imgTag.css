@@ -1,128 +1,20 @@
-@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
-
-:root{
-  background: black;
-}
-
-*{
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  font-family: 'Poppins';
-}
-
-.container{
-  width: 100%;
-  height: 100vh;
-  position: relative;
-  color: white;
-}
-
-.content{
-  position: relative;
-}
-
-.s-one {
-  position: absolute;
-  width: 1px;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.2);
-  left: 15%;
-  z-index: -1;
-}
-
-.s-two {
-  position: absolute;
-  width: 1px;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.2);
-  left: 50%;
-  z-index: -1;
-}
-
-.s-three {
-  position: absolute;
-  width: 1px;
-  height: 100vh;
-  background: rgba(255, 255, 255, 0.2);
-  left: 85%;
-  z-index: -1;
-}
-
-.top-bar ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.top-bar ul li {
-  list-style: none;
-  line-height: 46px;
-  padding: 16px 32px;
-  margin: 0 16px;
-}
-
-.menu-btn {
-  position: absolute;
-  right: 20px;
-  padding: 16px 0 0 0;
-  width: 40px;
-  height: 40px;
-}
-
-.one, .two {
-  position: absolute;
-  width: 30px;
-  height: 2px;
-}
-
-.two {
-  margin-top: 12px;
-}
-
-.acocunt span {
-  margin-left: 8px;
-}
-
-.logo {
-  position: absolute;
-  left: 40px;
-  font-family: 'Trade Winds';
-  font-weight: bolder;
-  font-size: 20px;
-
-}
-
-.contact {
-  padding: 10px 30px;
-  position: absolute;
-  left: -20px;
-  top: 180px;
-  transform: rotate(-90deg);
-}
-
 .tag {
   position: absolute;
-  top: 166px;
-  left: -300px;
-  padding: 10px 30px;
+  text-align: right;
+  top: 180px;
+  left: -270px;
   color: #fff;
+  letter-spacing: 4px;
 }
 
-.year {
-  position: absolute;
-  top: 90%;
-  left: -130px;
-  padding: 10px 30px;
+.coffee .text-wrapper{
+  opacity: 0;
 }
 
 .add {
   position: absolute;
   left: -54px;
-  font-size: 20px;
+  font-size: 10px;
   padding: 10px 30px;
 }
 
@@ -134,14 +26,14 @@ html, body {
   position: absolute;
   z-index: 0;
   top: 15%;
-  left: 50%;
+  left: 50.7%;
 }
 
 .shape-corner{
   border: 2px solid transparent;
 }
 
-.corner,
+.corner-top,
 .corner-bottom{
   position: absolute;
   width: 0;
@@ -149,7 +41,7 @@ html, body {
   border-color: #5b5b5b;
 }
 
-.corner{
+.corner-top{
   top: -10px;
   right: -10px;
   border-left: none;
@@ -180,43 +72,16 @@ html, body {
   left: -99px;
   top: 200px;
   background: #d6d6d6;
-  width: 180px;
-  height: 2px;
   transform: rotate(90deg);
+  animation: line-increase 3.5s ease-in forwards;
 }
+
 
 .metier {
-  padding: 10px 30px;
   position: absolute;
-  left: 205px;
+  left: 235px;
   top: 180px;
   transform: rotate(90deg);
-}
-
-.tag-line {
-  position: absolute;
-  top: 490px;
-  left: 692px;
-  padding: 10px 30px;
-  color: grey;
-}
-
-.media ul{
-  list-style: none;
-  position: absolute;
-  right: 20px;
-  top: 75%;
-}
-
-.media ul li {
-  font-size: 18px;
-  margin: 0 0 12px 0;
-}
-
-.media ul li a{
-  text-decoration: none;
-  outline: none;
-  color: white;
 }
 
 .title span {
@@ -261,6 +126,7 @@ img {
   animation: rev-img 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
   animation-delay: 1s;
 }
+
 
 @keyframes rev-img {
   0% {
@@ -307,6 +173,18 @@ img {
     width: 0%;
   }
 }
+
+@keyframes line-increase {
+  0%{
+    width: 0px;
+    height: 2px;
+  }
+  100%{
+    width: 180px;
+    height: 2px;
+  }
+}
+
 
 @keyframes appear-text {
   0% {

@@ -1,0 +1,30 @@
+@import "https://fonts.googleapis.com/css?family=Space+Mono:400,400i,700";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 2rem;
+  background: url("http://api.thumbr.it/whitenoise-700x370.png?background=000000ff&noise=3d3d3d&density=43&opacity=42");
+  -webkit-animation: noise-animation .5 linear;
+  animation: noise-animation .5 linear infinite;
+  /* background-size: 200%; */
+}
+
+@keyframes noise-animation {
+  0%{
+    background-position: 0 0;
+  }
+  100%{
+    background-position: 100% 100%;
+  }
+}
+
+h1 {
+  font-size: 0px;
+}
+
+.canvas-container {
+  text-align: center;
+}
