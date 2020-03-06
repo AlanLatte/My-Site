@@ -1,8 +1,9 @@
 .tag {
   position: absolute;
   text-align: right;
-  top: 180px;
-  left: -270px;
+  top: 166px;
+  left: -300px;
+  padding: 10px 30px;
   color: #fff;
   letter-spacing: 4px;
 }
@@ -78,8 +79,9 @@
 
 
 .metier {
+  padding: 10px 30px;
   position: absolute;
-  left: 235px;
+  left: 205px;
   top: 180px;
   transform: rotate(90deg);
 }
@@ -110,6 +112,7 @@
 
 
 img {
+  position: relative;
   opacity: 0;
   animation: appear-text 1s linear forwards;
   animation-delay: 1.4s;

@@ -4,20 +4,26 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Awesome Hover Effect + Animated Cursor | Codegrid</title>
+      <title>Cursor</title>
       <link rel="stylesheet" href="style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 </head>
 <body>
-  <div class="cursor"></div>
+  <div class="cursor"><i class="fab fa-strava"></i></div>
+  <div class="cursor-follower"></div>
   <div class="img">
     <div class="line"></div>
-    <img onmouseover="img_hover()"  onmouseout="img_no_hover()" src="me.jpg" class="hover-cursor" alt="">
-    <div class="title">Alan<br>Latte</div>
+    <div class="portfolio-image">
+      <div class="portfolio-border">
+        <img src="me.jpg" alt="">
+        <div class="title">
+          <span>Alan<br>Latte</span>
+        </div>
+      </div>
+    </div>
   </div>
-<script type="text/javascript">
-  
-</script>
-<script src="script.js" charset="utf-8"></script>
-<script src="anime.js" charset="utf-8"></script>
+  <script src="anime.js" charset="utf-8"></script>
+  <script src="script.js" charset="utf-8"></script>
 </body>
 </html>

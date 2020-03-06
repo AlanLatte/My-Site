@@ -1,30 +1,45 @@
-(function () {
+var cursor = $(".cursor"),
+    follower = $(".cursor-follower");
 
-      const link = document.querySelectorAll('nav > .hover-this');
-      const cursor = document.querySelector('.cursor');
+var posX = 0,
+    posY = 0,
+    mouseX = 0,
+    mouseY = 0;
 
-      const animateit = function (e) {
-            const span = this.querySelector('span');
-            const { offsetX: x, offsetY: y } = e,
-            { offsetWidth: width, offsetHeight: height } = this,
+TweenMax.to({}, 0.016, {
+    repeat: -1,
+    onRepeat: function() {
+        posX += (mouseX - posX) / 9;
+        posY += (mouseY - posY) / 9;
+        TweenMax.set(follower, {
+            css: {
+                left: posX - 10,
+                top: posY - 10
+            }
+        });
 
-            move = 25,
-            xMove = x / width * (move * 2) - move,
-            yMove = y / height * (move * 2) - move;
+        TweenMax.set(cursor, {
+            css: {
+                left: mouseX,
+                top: mouseY
+            }
+        });
+    }
+});
 
-            span.style.transform = `translate(${xMove}px, ${yMove}px)`;
 
-            if (e.type === 'mouseleave') span.style.transform = '';
-      };
+$(document).on("mousemove", function(e) {
+    mouseX = e.pageX;
+    mouseY = e.pageY;
 
-      const editCursor = e => {
-            const { clientX: x, clientY: y } = e;
-            cursor.style.left = x + 'px';
-            cursor.style.top = y + 'px';
-      };
+});
 
-      link.forEach(b => b.addEventListener('mousemove', animateit));
-      link.forEach(b => b.addEventListener('mouseleave', animateit));
-      window.addEventListener('mousemove', editCursor);
+$(".portfolio-image img").on("mouseenter", function() {
+    cursor.addClass("active");
+    follower.addClass("active");
+});
 
-})();
+$(".portfolio-image img").on("mouseleave", function() {
+    cursor.removeClass("active");
+    follower.removeClass("active");
+});

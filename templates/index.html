@@ -9,12 +9,20 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.1.0/lib/anime.min.js" charset="utf-8"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
 </head>
 <body>
+
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
   <div class="container">
     <div class="img">
       <div class="line"></div>
-      <img src="{{ url_for('static', filename='images/me.jpg') }}" alt="me">
+      <div class="portfolio-image">
+        <div class="portfolio-border">
+          <img src="{{ url_for('static', filename='images/me.jpg') }}" alt="me">
+        </div>
+      </div>
       <div class="corner-top shape-corner"></div>
       <div class="corner-bottom shape-corner"></div>
       <div class="title">
@@ -71,7 +79,7 @@
       </ul>
     </div>
   </div>
-  <!-- <script type="text/javascript" src="scripts/cursorScript.js" charset="utf-8"></script> -->
+  <script type="text/javascript" src="{{ url_for('static', filename='scripts/cursorScript.js')}}" charset="utf-8"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='scripts/script.js') }}"></script>
   <script type="text/javascript" src="{{ url_for('static', filename='scripts/animatedLoad.js') }}"></script>
 

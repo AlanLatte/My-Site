@@ -5,7 +5,6 @@ var config = {
 		'color': '#fff',
 		'glitchCount': 4
 	}
-	//////////////////////////////
 
 var elements;
 
