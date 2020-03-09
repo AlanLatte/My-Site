@@ -3,6 +3,16 @@
 @import 'imgTag.css';
 @import 'links.css';
 @import 'cursor.css';
+@import url('https://fonts.googleapis.com/css?family=Trade+Winds&display=swap');
+
+html, body {
+  font-family: 'Poppins';
+}
+
+body{
+  background: url("http://api.thumbr.it/whitenoise-700x370.png?background=000000ff&noise=3d3d3d&density=30&opacity=25") !important;
+  background-color: black !important ;
+}
 
 .container{
   width: 100%;
